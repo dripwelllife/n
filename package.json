@@ -1,12 +1,12 @@
 {
-  "author" : "Bard Dayley",
-  "name" : "censorify",
+  "author" : "jinyounghwa",
+  "name" : "test",
   "version" : "0.0.1",
   "description" : "censors words out of text",
   "main" : "censortext",
   "repository" : {
     "type" : "git",
-    "url" : "https://github.com/jinyounghwa/nodetest.git"
+    "url" : "https://github.com/dripwelllife/n.git"
   },
   "keywords" : [
     "censeor",

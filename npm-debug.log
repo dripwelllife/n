@@ -19,78 +19,86 @@
 7 verbose parsed url   href: '.' }
 8 silly lockFile 3a52ce78- .
 9 verbose lock . /Users/younghwajin/.npm/3a52ce78-.lock
-10 verbose tar pack [ '/Users/younghwajin/.npm/censorify/0.0.1/package.tgz', '.' ]
-11 verbose tarball /Users/younghwajin/.npm/censorify/0.0.1/package.tgz
+10 verbose tar pack [ '/Users/younghwajin/.npm/test/0.0.1/package.tgz', '.' ]
+11 verbose tarball /Users/younghwajin/.npm/test/0.0.1/package.tgz
 12 verbose folder .
-13 info prepublish censorify@0.0.1
+13 info prepublish test@0.0.1
 14 silly lockFile 1f1177db-tar tar://.
 15 verbose lock tar://. /Users/younghwajin/.npm/1f1177db-tar.lock
-16 silly lockFile 4f2ba598--npm-censorify-0-0-1-package-tgz tar:///Users/younghwajin/.npm/censorify/0.0.1/package.tgz
-17 verbose lock tar:///Users/younghwajin/.npm/censorify/0.0.1/package.tgz /Users/younghwajin/.npm/4f2ba598--npm-censorify-0-0-1-package-tgz.lock
+16 silly lockFile ec1287a4-wajin-npm-test-0-0-1-package-tgz tar:///Users/younghwajin/.npm/test/0.0.1/package.tgz
+17 verbose lock tar:///Users/younghwajin/.npm/test/0.0.1/package.tgz /Users/younghwajin/.npm/ec1287a4-wajin-npm-test-0-0-1-package-tgz.lock
 18 silly lockFile 1f1177db-tar tar://.
 19 silly lockFile 1f1177db-tar tar://.
-20 silly lockFile 4f2ba598--npm-censorify-0-0-1-package-tgz tar:///Users/younghwajin/.npm/censorify/0.0.1/package.tgz
-21 silly lockFile 4f2ba598--npm-censorify-0-0-1-package-tgz tar:///Users/younghwajin/.npm/censorify/0.0.1/package.tgz
-22 silly lockFile 8c4a6c55-ajin-npm-censorify-0-0-1-package /Users/younghwajin/.npm/censorify/0.0.1/package
-23 verbose lock /Users/younghwajin/.npm/censorify/0.0.1/package /Users/younghwajin/.npm/8c4a6c55-ajin-npm-censorify-0-0-1-package.lock
-24 silly lockFile 8c4a6c55-ajin-npm-censorify-0-0-1-package /Users/younghwajin/.npm/censorify/0.0.1/package
-25 silly lockFile 8c4a6c55-ajin-npm-censorify-0-0-1-package /Users/younghwajin/.npm/censorify/0.0.1/package
+20 silly lockFile ec1287a4-wajin-npm-test-0-0-1-package-tgz tar:///Users/younghwajin/.npm/test/0.0.1/package.tgz
+21 silly lockFile ec1287a4-wajin-npm-test-0-0-1-package-tgz tar:///Users/younghwajin/.npm/test/0.0.1/package.tgz
+22 silly lockFile c4370fc4-unghwajin-npm-test-0-0-1-package /Users/younghwajin/.npm/test/0.0.1/package
+23 verbose lock /Users/younghwajin/.npm/test/0.0.1/package /Users/younghwajin/.npm/c4370fc4-unghwajin-npm-test-0-0-1-package.lock
+24 silly lockFile c4370fc4-unghwajin-npm-test-0-0-1-package /Users/younghwajin/.npm/test/0.0.1/package
+25 silly lockFile c4370fc4-unghwajin-npm-test-0-0-1-package /Users/younghwajin/.npm/test/0.0.1/package
 26 silly lockFile 3a52ce78- .
 27 silly lockFile 3a52ce78- .
-28 silly publish { author: { name: 'Bard Dayley' },
-28 silly publish   name: 'censorify',
+28 silly publish { author: { name: 'jinyounghwa' },
+28 silly publish   name: 'test',
 28 silly publish   version: '0.0.1',
 28 silly publish   description: 'censors words out of text',
 28 silly publish   main: 'censortext',
-28 silly publish   repository:
-28 silly publish    { type: 'git',
-28 silly publish      url: 'https://github.com/bwdayley/nodebook/tree/master/ch03/cesorify' },
+28 silly publish   repository: { type: 'git', url: 'https://github.com/dripwelllife/n.git' },
 28 silly publish   keywords: [ 'censeor', 'words' ],
 28 silly publish   dependescies: {},
 28 silly publish   engines: { node: '*' },
+28 silly publish   gitHead: '6d806798a9d17400a2acfc5f1cf8b0a0957ec631',
+28 silly publish   bugs: { url: 'https://github.com/dripwelllife/n/issues' },
 28 silly publish   readme: 'ERROR: No README data found!',
-28 silly publish   _id: 'censorify@0.0.1',
+28 silly publish   homepage: 'https://github.com/dripwelllife/n',
+28 silly publish   _id: 'test@0.0.1',
 28 silly publish   scripts: {},
-28 silly publish   _shasum: 'd81d0bcfdfdf895e68890e81278ae0dfcafec4b3',
+28 silly publish   _shasum: 'dbef8c4dab83fc91467d6758836d6e9bac63641c',
 28 silly publish   _from: '.' }
-29 verbose request where is /censorify
+29 verbose request where is /test
 30 verbose request registry https://registry.npmjs.org/
-31 verbose request id 8a922ea063e319e4
-32 verbose url raw /censorify
-33 verbose url resolving [ 'https://registry.npmjs.org/', './censorify' ]
-34 verbose url resolved https://registry.npmjs.org/censorify
-35 verbose request where is https://registry.npmjs.org/censorify
-36 info trying registry request attempt 1 at 21:47:23
-37 http PUT https://registry.npmjs.org/censorify
-38 http 403 https://registry.npmjs.org/censorify
-39 verbose headers { date: 'Tue, 06 Jan 2015 12:47:23 GMT',
+31 verbose request id 6907380e94d5f74d
+32 verbose url raw /test
+33 verbose url resolving [ 'https://registry.npmjs.org/', './test' ]
+34 verbose url resolved https://registry.npmjs.org/test
+35 verbose request where is https://registry.npmjs.org/test
+36 info trying registry request attempt 1 at 13:30:45
+37 http PUT https://registry.npmjs.org/test
+38 http 403 https://registry.npmjs.org/test
+39 verbose headers { date: 'Sun, 11 Jan 2015 04:30:46 GMT',
 39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 39 verbose headers   'content-type': 'application/json',
 39 verbose headers   'cache-control': 'max-age=60',
-39 verbose headers   'content-length': '795',
+39 verbose headers   'content-length': '5443',
 39 verbose headers   'accept-ranges': 'bytes',
 39 verbose headers   via: '1.1 varnish',
 39 verbose headers   'x-served-by': 'cache-ty66-TYO',
 39 verbose headers   'x-cache': 'MISS',
 39 verbose headers   'x-cache-hits': '0',
-39 verbose headers   'x-timer': 'S1420548443.657461,VS0,VE130',
+39 verbose headers   'x-timer': 'S1420950645.864706,VS0,VE144',
 39 verbose headers   'keep-alive': 'timeout=10, max=50',
 39 verbose headers   connection: 'Keep-Alive' }
 40 error publish Failed PUT 403
-41 error Error: forbidden user: jinyounghwa not authorized to modify censorify
-41 error Changed: description "Censors words out of text" -> "censors words out of text"
-41 error Changed: dist-tags.latest "0.1.1" -> "0.0.1"
+41 error Error: forbidden user: jinyounghwa not authorized to modify test
+41 error Changed: description "(Un)CommonJS test runner." -> "censors words out of text"
+41 error Changed: dist-tags.latest "0.6.0" -> "0.0.1"
 41 error Added: versions.0.0.1
-41 error Changed: readme "This is first node.js file\u000a" -> "ERROR: No README data found!"
-41 error Changed: time.modified "2014-07-18T15:24:31.950Z" -> "2015-01-06T12:49:39.653Z"
+41 error Changed: author.name "Irakli Gozalishvili" -> "jinyounghwa"
+41 error Deleted: author.email
+41 error Deleted: author.url
+41 error Changed: repository.url "https://github.com/Gozala/test-commonjs.git" -> "https://github.com/dripwelllife/n.git"
+41 error Deleted: repository.web
+41 error Changed: time.modified "2014-03-05T09:44:46.302Z" -> "2015-01-11T04:33:12.078Z"
 41 error Added: time.0.0.1
-41 error Deleted: homepage
-41 error Changed: keywords.0 "censor" -> "censeor"
-41 error Changed: repository.url "https://github.com/sisingh/nodebook-ch03-censorify" -> "https://github.com/bwdayley/nodebook/tree/master/ch03/cesorify"
-41 error Changed: author.name "Brad Dayley" -> "Bard Dayley"
-41 error Deleted: bugs
-41 error Changed: readmeFilename "README.md" -> ""
-41 error Added: _attachments: censorify
+41 error Changed: readme "# (Un)commonJS unit test runner\u000a\u000aImplementation of [(Un)commonJS unit test runner][UncommonJS unit test runner].\u000a\u000a[![build status](https://secure.travis-ci.org/Gozala/test-commonjs.png)](http://travis-ci.org/Gozala/test-commonjs)\u000a\u000a## Testing\u000a\u000aIn order to make your package testable from [npm] you should:\u000a\u000a- Create a directory in your package root.\u000a- Define test directory in package descriptor under `directories` section.\u000a- Define test script in package descriptor under `scripts` section.\u000a- Define dependency on this package (It's name is \"test\" in [npm] registry).\u000a- Write your tests\u000a- Test your package by running all tests `npm test`\u000a  or run individual tests `node ./path/to/test/group.js`\u000a\u000a## Example\u000a\u000a### package.json\u000a\u000a```js\u000a{\u000a  \"name\": \"mypackage\",\u000a  \"version\": \"0.7.0\",\u000a  \"description\": \"Sample package\",\u000a  \"scripts\": { \"test\": \"node test/all.js\" },\u000a  \"devDependencies\": { \"test\": \">=0.0.5\" }\u000a}\u000a```\u000a\u000a### Async test\u000a\u000a```js\u000a// if test function expects second named argument it will be executed\u000a// in async mode and test will be complete only after callback is called\u000aexports['test my async foo'] = function(assert, done) {\u000a  var http = require('http')\u000a  var google = http.createClient(80, 'www.jeditoolkit.com')\u000a  var request = google.request('GET', '/', {'host': 'www.jeditoolkit.com'})\u000a  request.end()\u000a  request.on('response', function (response) {\u000a    assert.equal(response.statusCode, 302, 'must redirect') // will log result\u000a    response.setEncoding('utf8')\u000a    response.on('data', function (chunk) {\u000a      assert.notEqual(chunk, 'helo world', 'must be something more inteligent')\u000a      done() // telling test runner that we're done with this test\u000a    })\u000a  })\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000a### Sync test\u000a\u000a```js\u000a// using assert passed to the test function that just logs failures\u000aexports['test that logs all failures'] = function(assert) {\u000a  assert.equal(2 + 2, 5, 'assert failure is logged')\u000a  assert.equal(3 + 2, 5, 'assert pass is logged')\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000a### Fast fail\u000a\u000a```js\u000a// using nodejs's build in asserts that throw on failure\u000avar assert = require('assert')\u000a\u000aexports['test that stops execution on first failure'] = function() {\u000a  assert.equal(2 + 2, 5, 'assert fails and test execution stop here')\u000a  assert.equal(3 + 2, 5, 'will never pass this since test failed above')\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000a### Custom assertions\u000a\u000a```js\u000avar AssertBase = require('assert').Assert\u000avar AssertDescriptor = {\u000a  constructor: { value: Assert },\u000a  inRange: { value: function (lower, inner, upper, message) {\u000a    if (lower < inner && inner < upper) {\u000a      this.fail({\u000a        actual: inner,\u000a        expected: lower + '> ' + ' < ' + upper,\u000a        operator: \"inRange\",\u000a        message: message\u000a      })\u000a    } else {\u000a      this.pass(message);\u000a    }\u000a  }, enumerable: true }\u000a}\u000afunction Assert() {\u000a  return Object.create(AssertBase.apply(null, arguments), AssertDescriptor)\u000a}\u000a\u000a// bundling custom asserts with test suite\u000aexports.Assert = Assert\u000aexports['test with custom asserts'] = function(assert) {\u000a  assert.inRange(2, 3, 5, 'passes assert and logs')\u000a  assert.equal(3 + 2, 5, 'assert pass is logged')\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000aFor more examples checkout tests for this package and for more details see\u000athe [UncommonJS unit test runner] specification.\u000a\u000a[UncommonJS unit test runner]:https://github.com/kriskowal/uncommonjs/blob/master/tests/specification.md\u000a[npm]:http://npmjs.org/\u000a" -> "ERROR: No README data found!"
+41 error Changed: homepage "https://github.com/Gozala/test-commonjs/" -> "https://github.com/dripwelllife/n"
+41 error Changed: keywords.0 "test" -> "censeor"
+41 error Changed: keywords.1 "commonjs" -> "words"
+41 error Deleted: keywords.2
+41 error Deleted: keywords.3
+41 error Deleted: contributors
+41 error Changed: bugs.url "http://github.com/Gozala/test-commonjs/issues/" -> "https://github.com/dripwelllife/n/issues"
+41 error Changed: readmeFilename "Readme.md" -> ""
+41 error Added: _attachments: test
 41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
 41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
 41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
@@ -106,7 +114,7 @@
 42 error     <http://github.com/npm/npm/issues>
 43 error System Darwin 14.0.0
 44 error command "node" "/usr/local/bin/npm" "publish"
-45 error cwd /Users/younghwajin/Desktop/node_jin/sensorify
+45 error cwd /Users/younghwajin/Desktop/node_jin/n
 46 error node -v v0.10.32
 47 error npm -v 1.4.28
 48 verbose exit [ 1, true ]
