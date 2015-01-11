@@ -46,35 +46,36 @@
 28 silly publish   keywords: [ 'censeor', 'words' ],
 28 silly publish   dependescies: {},
 28 silly publish   engines: { node: '*' },
-28 silly publish   gitHead: '6d806798a9d17400a2acfc5f1cf8b0a0957ec631',
+28 silly publish   readme: '# n\nnodetest\nstudy\n\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'c5fe3f9d0c62960466951e18468a07bd5817afe0',
 28 silly publish   bugs: { url: 'https://github.com/dripwelllife/n/issues' },
-28 silly publish   readme: 'ERROR: No README data found!',
 28 silly publish   homepage: 'https://github.com/dripwelllife/n',
 28 silly publish   _id: 'test@0.0.1',
 28 silly publish   scripts: {},
-28 silly publish   _shasum: 'dbef8c4dab83fc91467d6758836d6e9bac63641c',
+28 silly publish   _shasum: '552dca26da89a3a1105ef7e9ed0069c62a413003',
 28 silly publish   _from: '.' }
 29 verbose request where is /test
 30 verbose request registry https://registry.npmjs.org/
-31 verbose request id 6907380e94d5f74d
+31 verbose request id 6c96da7619dc3ddc
 32 verbose url raw /test
 33 verbose url resolving [ 'https://registry.npmjs.org/', './test' ]
 34 verbose url resolved https://registry.npmjs.org/test
 35 verbose request where is https://registry.npmjs.org/test
-36 info trying registry request attempt 1 at 13:30:45
+36 info trying registry request attempt 1 at 13:33:43
 37 http PUT https://registry.npmjs.org/test
 38 http 403 https://registry.npmjs.org/test
-39 verbose headers { date: 'Sun, 11 Jan 2015 04:30:46 GMT',
+39 verbose headers { date: 'Sun, 11 Jan 2015 04:33:44 GMT',
 39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 39 verbose headers   'content-type': 'application/json',
 39 verbose headers   'cache-control': 'max-age=60',
-39 verbose headers   'content-length': '5443',
+39 verbose headers   'content-length': '5468',
 39 verbose headers   'accept-ranges': 'bytes',
 39 verbose headers   via: '1.1 varnish',
-39 verbose headers   'x-served-by': 'cache-ty66-TYO',
+39 verbose headers   'x-served-by': 'cache-ty67-TYO',
 39 verbose headers   'x-cache': 'MISS',
 39 verbose headers   'x-cache-hits': '0',
-39 verbose headers   'x-timer': 'S1420950645.864706,VS0,VE144',
+39 verbose headers   'x-timer': 'S1420950824.802581,VS0,VE134',
 39 verbose headers   'keep-alive': 'timeout=10, max=50',
 39 verbose headers   connection: 'Keep-Alive' }
 40 error publish Failed PUT 403
@@ -87,9 +88,9 @@
 41 error Deleted: author.url
 41 error Changed: repository.url "https://github.com/Gozala/test-commonjs.git" -> "https://github.com/dripwelllife/n.git"
 41 error Deleted: repository.web
-41 error Changed: time.modified "2014-03-05T09:44:46.302Z" -> "2015-01-11T04:33:12.078Z"
+41 error Changed: time.modified "2014-03-05T09:44:46.302Z" -> "2015-01-11T04:36:11.006Z"
 41 error Added: time.0.0.1
-41 error Changed: readme "# (Un)commonJS unit test runner\u000a\u000aImplementation of [(Un)commonJS unit test runner][UncommonJS unit test runner].\u000a\u000a[![build status](https://secure.travis-ci.org/Gozala/test-commonjs.png)](http://travis-ci.org/Gozala/test-commonjs)\u000a\u000a## Testing\u000a\u000aIn order to make your package testable from [npm] you should:\u000a\u000a- Create a directory in your package root.\u000a- Define test directory in package descriptor under `directories` section.\u000a- Define test script in package descriptor under `scripts` section.\u000a- Define dependency on this package (It's name is \"test\" in [npm] registry).\u000a- Write your tests\u000a- Test your package by running all tests `npm test`\u000a  or run individual tests `node ./path/to/test/group.js`\u000a\u000a## Example\u000a\u000a### package.json\u000a\u000a```js\u000a{\u000a  \"name\": \"mypackage\",\u000a  \"version\": \"0.7.0\",\u000a  \"description\": \"Sample package\",\u000a  \"scripts\": { \"test\": \"node test/all.js\" },\u000a  \"devDependencies\": { \"test\": \">=0.0.5\" }\u000a}\u000a```\u000a\u000a### Async test\u000a\u000a```js\u000a// if test function expects second named argument it will be executed\u000a// in async mode and test will be complete only after callback is called\u000aexports['test my async foo'] = function(assert, done) {\u000a  var http = require('http')\u000a  var google = http.createClient(80, 'www.jeditoolkit.com')\u000a  var request = google.request('GET', '/', {'host': 'www.jeditoolkit.com'})\u000a  request.end()\u000a  request.on('response', function (response) {\u000a    assert.equal(response.statusCode, 302, 'must redirect') // will log result\u000a    response.setEncoding('utf8')\u000a    response.on('data', function (chunk) {\u000a      assert.notEqual(chunk, 'helo world', 'must be something more inteligent')\u000a      done() // telling test runner that we're done with this test\u000a    })\u000a  })\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000a### Sync test\u000a\u000a```js\u000a// using assert passed to the test function that just logs failures\u000aexports['test that logs all failures'] = function(assert) {\u000a  assert.equal(2 + 2, 5, 'assert failure is logged')\u000a  assert.equal(3 + 2, 5, 'assert pass is logged')\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000a### Fast fail\u000a\u000a```js\u000a// using nodejs's build in asserts that throw on failure\u000avar assert = require('assert')\u000a\u000aexports['test that stops execution on first failure'] = function() {\u000a  assert.equal(2 + 2, 5, 'assert fails and test execution stop here')\u000a  assert.equal(3 + 2, 5, 'will never pass this since test failed above')\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000a### Custom assertions\u000a\u000a```js\u000avar AssertBase = require('assert').Assert\u000avar AssertDescriptor = {\u000a  constructor: { value: Assert },\u000a  inRange: { value: function (lower, inner, upper, message) {\u000a    if (lower < inner && inner < upper) {\u000a      this.fail({\u000a        actual: inner,\u000a        expected: lower + '> ' + ' < ' + upper,\u000a        operator: \"inRange\",\u000a        message: message\u000a      })\u000a    } else {\u000a      this.pass(message);\u000a    }\u000a  }, enumerable: true }\u000a}\u000afunction Assert() {\u000a  return Object.create(AssertBase.apply(null, arguments), AssertDescriptor)\u000a}\u000a\u000a// bundling custom asserts with test suite\u000aexports.Assert = Assert\u000aexports['test with custom asserts'] = function(assert) {\u000a  assert.inRange(2, 3, 5, 'passes assert and logs')\u000a  assert.equal(3 + 2, 5, 'assert pass is logged')\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000aFor more examples checkout tests for this package and for more details see\u000athe [UncommonJS unit test runner] specification.\u000a\u000a[UncommonJS unit test runner]:https://github.com/kriskowal/uncommonjs/blob/master/tests/specification.md\u000a[npm]:http://npmjs.org/\u000a" -> "ERROR: No README data found!"
+41 error Changed: readme "# (Un)commonJS unit test runner\u000a\u000aImplementation of [(Un)commonJS unit test runner][UncommonJS unit test runner].\u000a\u000a[![build status](https://secure.travis-ci.org/Gozala/test-commonjs.png)](http://travis-ci.org/Gozala/test-commonjs)\u000a\u000a## Testing\u000a\u000aIn order to make your package testable from [npm] you should:\u000a\u000a- Create a directory in your package root.\u000a- Define test directory in package descriptor under `directories` section.\u000a- Define test script in package descriptor under `scripts` section.\u000a- Define dependency on this package (It's name is \"test\" in [npm] registry).\u000a- Write your tests\u000a- Test your package by running all tests `npm test`\u000a  or run individual tests `node ./path/to/test/group.js`\u000a\u000a## Example\u000a\u000a### package.json\u000a\u000a```js\u000a{\u000a  \"name\": \"mypackage\",\u000a  \"version\": \"0.7.0\",\u000a  \"description\": \"Sample package\",\u000a  \"scripts\": { \"test\": \"node test/all.js\" },\u000a  \"devDependencies\": { \"test\": \">=0.0.5\" }\u000a}\u000a```\u000a\u000a### Async test\u000a\u000a```js\u000a// if test function expects second named argument it will be executed\u000a// in async mode and test will be complete only after callback is called\u000aexports['test my async foo'] = function(assert, done) {\u000a  var http = require('http')\u000a  var google = http.createClient(80, 'www.jeditoolkit.com')\u000a  var request = google.request('GET', '/', {'host': 'www.jeditoolkit.com'})\u000a  request.end()\u000a  request.on('response', function (response) {\u000a    assert.equal(response.statusCode, 302, 'must redirect') // will log result\u000a    response.setEncoding('utf8')\u000a    response.on('data', function (chunk) {\u000a      assert.notEqual(chunk, 'helo world', 'must be something more inteligent')\u000a      done() // telling test runner that we're done with this test\u000a    })\u000a  })\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000a### Sync test\u000a\u000a```js\u000a// using assert passed to the test function that just logs failures\u000aexports['test that logs all failures'] = function(assert) {\u000a  assert.equal(2 + 2, 5, 'assert failure is logged')\u000a  assert.equal(3 + 2, 5, 'assert pass is logged')\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000a### Fast fail\u000a\u000a```js\u000a// using nodejs's build in asserts that throw on failure\u000avar assert = require('assert')\u000a\u000aexports['test that stops execution on first failure'] = function() {\u000a  assert.equal(2 + 2, 5, 'assert fails and test execution stop here')\u000a  assert.equal(3 + 2, 5, 'will never pass this since test failed above')\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000a### Custom assertions\u000a\u000a```js\u000avar AssertBase = require('assert').Assert\u000avar AssertDescriptor = {\u000a  constructor: { value: Assert },\u000a  inRange: { value: function (lower, inner, upper, message) {\u000a    if (lower < inner && inner < upper) {\u000a      this.fail({\u000a        actual: inner,\u000a        expected: lower + '> ' + ' < ' + upper,\u000a        operator: \"inRange\",\u000a        message: message\u000a      })\u000a    } else {\u000a      this.pass(message);\u000a    }\u000a  }, enumerable: true }\u000a}\u000afunction Assert() {\u000a  return Object.create(AssertBase.apply(null, arguments), AssertDescriptor)\u000a}\u000a\u000a// bundling custom asserts with test suite\u000aexports.Assert = Assert\u000aexports['test with custom asserts'] = function(assert) {\u000a  assert.inRange(2, 3, 5, 'passes assert and logs')\u000a  assert.equal(3 + 2, 5, 'assert pass is logged')\u000a}\u000a\u000aif (module == require.main) require('test').run(exports)\u000a```\u000a\u000aFor more examples checkout tests for this package and for more details see\u000athe [UncommonJS unit test runner] specification.\u000a\u000a[UncommonJS unit test runner]:https://github.com/kriskowal/uncommonjs/blob/master/tests/specification.md\u000a[npm]:http://npmjs.org/\u000a" -> "# n\u000anodetest\u000astudy\u000a\u000a"
 41 error Changed: homepage "https://github.com/Gozala/test-commonjs/" -> "https://github.com/dripwelllife/n"
 41 error Changed: keywords.0 "test" -> "censeor"
 41 error Changed: keywords.1 "commonjs" -> "words"
@@ -97,7 +98,7 @@
 41 error Deleted: keywords.3
 41 error Deleted: contributors
 41 error Changed: bugs.url "http://github.com/Gozala/test-commonjs/issues/" -> "https://github.com/dripwelllife/n/issues"
-41 error Changed: readmeFilename "Readme.md" -> ""
+41 error Changed: readmeFilename "Readme.md" -> "README.md"
 41 error Added: _attachments: test
 41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
 41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)

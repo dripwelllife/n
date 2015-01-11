@@ -1,14 +1,14 @@
 {
   "author" : "jinyounghwa",
-  "name" : "test",
+  "name" : "jin1",
   "version" : "0.0.1",
   "description" : "censors words out of text",
-  "main" : "censortext",
+  "main" : "jin2",
   "repository" : {
     "type" : "git",
     "url" : "https://github.com/dripwelllife/n.git"
   },
-  "keywords" : [
+  "keywords1" : [
     "censeor",
     "words"
   ],
