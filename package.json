@@ -1,0 +1,19 @@
+{
+  "author" : "Bard Dayley",
+  "name" : "censorify",
+  "version" : "0.0.1",
+  "description" : "censors words out of text",
+  "main" : "censortext",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/jinyounghwa/nodetest.git"
+  },
+  "keywords" : [
+    "censeor",
+    "words"
+  ],
+  "dependescies" : {},
+  "engines" : {
+    "node" : "*"
+  }
+}
